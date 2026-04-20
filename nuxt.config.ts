@@ -1,7 +1,8 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/color-mode'],
-  css: ['~/assets/main.css'],
-  colorMode: {
-    classSuffix: ''
+  css: ['~/assets/css/main.css'],
+
+  nitro: {
+    preset: 'static'
   }
 })
