@@ -1,13 +1,10 @@
 <template>
-  <div class="perfil">
+  <div>
     <img src="/images/perfil.jpg" class="foto-perfil" />
 
-    <h1 class="nombre">{{ nombre }}</h1>
-    <h2>{{ titulo }}</h2>
-
-    <p class="descripcion">
-      {{ descripcion }}
-    </p>
+    <h2 class="nombre">{{ nombre }}</h2>
+    <h3>{{ titulo }}</h3>
+    <p>{{ descripcion }}</p>
   </div>
 </template>
 

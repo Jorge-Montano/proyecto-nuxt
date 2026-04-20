@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* MATRIX */
+.jp-matrix {
+  position: fixed;
+  inset: 0;
+  background: #bc5ee7; /* CLARO */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  font-size: 20px;
+  color: rgba(0,150,255,0.4);
+  z-index: -1;
+}
+
+.dark .jp-matrix {
+  background: #05050a; /* OSCURO */
+}
+
+/* CONTENEDOR */
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* TARJETA */
+.tarjeta {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  margin: 40px auto;
+}
+
+.dark .tarjeta {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* FOTO */
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* BOTÓN */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: teal;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}

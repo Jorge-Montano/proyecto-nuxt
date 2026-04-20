@@ -1,24 +1,31 @@
 <template>
   <div class="tarjeta">
 
-    <AppSideBar />
-
+    <!-- PERFIL -->
     <Perfil
       nombre="Jorge Montaño"
       titulo="Ingeniero en TICS"
       descripcion="Especialista en desarrollo web."
     />
 
-    <Contacto
-      email="jorge.alan.montano@gmail.com"
-      telefono="+52 5612791223"
-    />
-
+    <!-- REDES -->
     <Redes />
 
-    <ColorModeButton />
+    <!-- BOTÓN -->
+    <NuxtLink to="/contacto" class="btn">
+      Contacto
+    </NuxtLink>
+
+    <!-- MODO OSCURO -->
+    <div class="modo">
+      <ColorModeButton />
+    </div>
 
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Perfil from './Perfil.vue'
+import Redes from './Redes.vue'
+import ColorModeButton from './ColorModeButton.vue'
+</script>
