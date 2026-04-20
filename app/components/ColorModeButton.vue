@@ -1,6 +1,5 @@
 <script setup>
 import { computed } from 'vue'
-import { useColorMode } from '#imports'
 
 const colorMode = useColorMode()
 
@@ -15,17 +14,8 @@ const isDark = computed({
 </script>
 
 <template>
-  <label class="switch">
+  <label style="cursor:pointer;">
     <input type="checkbox" v-model="isDark" />
-    <span>Modo oscuro</span>
+    Modo oscuro
   </label>
 </template>
-
-<style scoped>
-.switch {
-  cursor: pointer;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-}
-</style>

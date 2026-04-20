@@ -1,60 +1,130 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: Arial;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* MATRIX */
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================= */
+/* 🎯 FONDO MATRIX */
+/* ========================= */
+
 .jp-matrix {
   position: fixed;
   inset: 0;
-  background: #bc5ee7; /* CLARO */
+  z-index: 0;
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
-  font-size: 20px;
-  color: rgba(0,150,255,0.4);
-  z-index: -1;
+  grid-auto-rows: 40px;
+
+  font-size: 28px;
+  color: rgba(0, 255, 200, 0.6);
+  font-family: monospace;
+
+  overflow: hidden;
+
+  /* MODO CLARO */
+  background: #bc5ee7;
 }
 
+/* 🌙 MODO OSCURO */
 .dark .jp-matrix {
-  background: #05050a; /* OSCURO */
+  background: #05050a;
 }
 
-/* CONTENEDOR */
-.container {
+/* ========================= */
+/* 🎯 CONTENIDO ENCIMA */
+/* ========================= */
+
+.contenido {
   position: relative;
-  z-index: 1;
-  text-align: center;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  padding-top: 80px; /* espacio para el menú */
 }
 
-/* TARJETA */
+/* ========================= */
+/* 🎯 TARJETA */
+/* ========================= */
+
 .tarjeta {
   background: white;
-  color: black;
   padding: 20px;
   border-radius: 12px;
   width: 320px;
-  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
 }
 
+/* 🌙 TARJETA EN OSCURO */
 .dark .tarjeta {
-  background: #1e1e1e;
+  background: #1f1f1f;
   color: white;
 }
 
-/* FOTO */
+/* IMAGEN PERFIL */
 .foto-perfil {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 /* BOTÓN */
 .btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 8px 12px;
-  background: teal;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #00b894;
   color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #019874;
+}
+
+/* ========================= */
+/* 🎯 MENÚ */
+/* ========================= */
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+
+  padding: 15px;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #00b894;
 }
