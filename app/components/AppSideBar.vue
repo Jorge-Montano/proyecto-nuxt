@@ -4,7 +4,6 @@
     <NuxtLink to="/sobre-mi">Sobre mí</NuxtLink>
     <NuxtLink to="/contacto">Contáctame</NuxtLink>
     <NuxtLink to="/proyectos">Proyectos</NuxtLink>
-    <NuxtLink to="/peliculas">Películas</NuxtLink>
   </nav>
 </template>
 
