@@ -41,18 +41,17 @@ body {
 /* ========================= */
 /* 🎯 CONTENIDO ENCIMA */
 /* ========================= */
-
+/* CONTENIDO PRINCIPAL */
 .contenido {
   position: relative;
-  z-index: 10;
+  z-index: 10; /* 🔥 esto lo trae al frente */
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
-
-  padding-top: 80px; /* espacio para el menú */
+  min-height: 100vh;
+  padding-top: 80px;
 }
 
 /* ========================= */
