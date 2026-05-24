@@ -12,13 +12,12 @@ const proyectos = [
   tecnologias: ['Three.js', 'Vue', '3D'],
   link: 'https://3-d-beryl.vercel.app/',
 },
-  {
-    titulo: 'Proyecto 3',
-    descripcion: 'Descripción breve del proyecto.',
-    tecnologias: ['Node', 'Express'],
-    link: '#',
-  },
-
+ {
+  titulo: 'Ajedrez 3D',
+  descripcion: 'Juego de ajedrez 3D interactivo desarrollado con Vue, Three.js y STLLoader, con reglas oficiales, movimiento de piezas y renderizado en tiempo real.',
+  tecnologias: ['Vue', 'Three.js', 'Chess.js', 'Nuxt'],
+  link: 'https://ajedrez-opal.vercel.app/',
+},
    {
     titulo: 'Proyecto 4',
     descripcion: 'Descripción breve del proyecto.',
