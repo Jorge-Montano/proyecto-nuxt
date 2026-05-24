@@ -1,19 +1,26 @@
 <script setup>
 const proyectos = [
   {
-    titulo: 'Proyecto 1',
-    descripcion: 'Descripción breve del proyecto.',
-    tecnologias: ['Vue', 'Nuxt', 'CSS'],
-    link: '#',
-  },
+  titulo: 'Proyecto Películas',
+  descripcion: 'Proyecto desarrollado con Nuxt.js y Vue.js que integra una API REST de TVMaze para mostrar películas y series dinámicamente.',
+  tecnologias: ['Vue', 'Nuxt', 'API'],
+  link: 'https://tecnostore-theta.vercel.app/app-store',
+},
   {
-    titulo: 'Proyecto 2',
-    descripcion: 'Descripción breve del proyecto.',
-    tecnologias: ['React', 'Next', 'Tailwind'],
-    link: '#',
-  },
+  titulo: 'FIGURA 3D STL',
+  descripcion: 'El presente proyecto tiene como objetivo el desarrollo de un visor de modelos tridimensionales en formato STL usando Three.js.',
+  tecnologias: ['Three.js', 'Vue', '3D'],
+  link: 'https://3-d-beryl.vercel.app/',
+},
   {
     titulo: 'Proyecto 3',
+    descripcion: 'Descripción breve del proyecto.',
+    tecnologias: ['Node', 'Express'],
+    link: '#',
+  },
+
+   {
+    titulo: 'Proyecto 4',
     descripcion: 'Descripción breve del proyecto.',
     tecnologias: ['Node', 'Express'],
     link: '#',
@@ -134,4 +141,4 @@ const proyectos = [
 .proyecto__link {
   color: #60a5fa;
 }
-</style>
+</style>	
