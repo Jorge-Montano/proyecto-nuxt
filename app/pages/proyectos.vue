@@ -18,12 +18,21 @@ const proyectos = [
   tecnologias: ['Vue', 'Three.js', 'Chess.js', 'Nuxt'],
   link: 'https://ajedrez-opal.vercel.app/',
 },
-   {
-    titulo: 'Proyecto 4',
-    descripcion: 'Descripción breve del proyecto.',
-    tecnologias: ['Node', 'Express'],
-    link: '#',
-  },
+ {
+  titulo: 'Desintegración 3D',
+  
+  descripcion: 'Aplicación web interactiva desarrollada con Nuxt y Three.js que transforma modelos STL en partículas 3D animadas mediante scroll, creando efectos visuales futuristas y morphing dinámico.',
+
+  tecnologias: [
+    'Nuxt',
+    'Three.js',
+    'GSAP',
+    'Vue',
+    'WebGL'
+  ],
+
+  link: 'https://desintegrador-azure.vercel.app/',
+},
 ]
 </script>
 
